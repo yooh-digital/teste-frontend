@@ -1,0 +1,84 @@
+//paleta de cores do site
+$cor-principal: #2c3e50;
+$cor-secundaria: #eeeeee;
+$cor-base: #ffffff;
+$cor-borda:  #2c3e40;
+$cor-menus-nav: #7e95ae;
+
+
+// tamanho de fonte principais
+$tamanho-fonte-nav: 14px;
+$tamanho-fonte-geral: 15px;
+
+
+// Global
+* {
+    // ajuste eliminar valores default
+    padding: 0;
+    margin: 0;
+}
+ul {
+    //tirando valores default da lista 
+    margin: 0;
+    padding: 0;
+}
+
+//---------------
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $tamanho-fonte-geral;
+    line-height: 1.5; //espaço entre linhas
+
+    header {
+        background-color: $cor-principal;
+        color: $cor-base;
+        padding-top: 20px;
+        min-height: 50px; // ajuste com espaço menor
+        border-bottom: $cor-borda 3px solid;
+
+        #logo {
+            float: left;
+
+            h2 {
+                margin: 0;
+            }
+        }
+
+        nav {
+            float: right;
+            padding-top: 5px;
+
+            ul {
+                li {
+                    float: left;
+                    display: inline;
+                    padding: 0 15px 0 15px; //distanciamento entre menus
+
+                    a {
+                        color: $cor-menus-nav;
+                        text-decoration: none;
+                        font-size: $tamanho-fonte-nav;
+                        font-weight: bold;
+                    }
+
+                    a:hover {
+                        color: #fffa;
+                    }
+                }
+            }
+        }
+
+        
+
+        
+    }
+
+    .container {
+        width: 70%; // espaçãmento só de um lado (cobrindo *80% da pagian)
+        margin: auto; // espaçamento vai para os dois lado CENTRALIZANDO o conteudo
+        overflow: hidden; // nao colocar scroll quando algo sair da div
+        
+    }
+}
+
