@@ -7,7 +7,9 @@
     <meta name="author" content="Nanderson Rodrigues">
     <title>Document</title>
 
+    <link href="css/all.css" rel="stylesheet"> <!--load all styles -->
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
 
@@ -38,11 +40,12 @@
     </section>
 
     <section id="about">
-        <div class="container">
-            <h2>About US</h2>
+        <div class="container-topic">
+            <h2>About Us</h2>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc. Orci nulla pellentesque dignissim enim.</p>
-
+        </div>
+        <div class="container">
             <img src="img/ipad.png" alt="">
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc. Orci nulla pellentesque dignissim enim. Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant</p>
@@ -50,37 +53,49 @@
     </section>
 
     <section id="team">
-        <div class="container">
+        <div class="container-topic">
             <h2>Our Team</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc. Orci nulla pellentesque dignissim enim.</p>
+        </div>
 
+        <div class="container">
             <div class="box">
-                <img src="img/avatar.png" alt="">
-                <h6>Name</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="container">
 
-                <button></button>
+                    <img src="img/team-male.png" alt="">
+                    <p class="nome">Name</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                      
+                    <button></button>
+
+                </div> 
             </div> 
             <div class="box">
-                <img src="img/avatar.png" alt="">
-                <h6>Name</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="container">
+                    <img src="img/team-female.png" alt="">
+                    <p class="nome">Name</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 
-                <button></button>
+                    <button></button>
+                </div>
             </div>
             <div class="box">
-                <img src="img/avatar.png" alt="">
-                <h6>Name</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="container">
+                    <img src="img/team-male.png" alt="">
+                    <p class="nome">Name</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 
-                <button></button>
+                    <button></button>
+                </div>
             </div>   
             <div class="box">
-                <img src="img/avatar.png" alt="">
-                <h6>Name</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="container">
+                    <img src="img/team-female.png" alt="">
+                    <p class="nome">Name<p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 
-                <button></button>
+                    <button></button>
+                </div>
             </div>
             
         </div>
@@ -88,23 +103,29 @@
     </section>
 
     <section id="portifolio">
-        <div class="container">
-
+        
+        <div class="container-topic">
             <h2>Portifolio</h2>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc.</p>
+        </div>
 
+        <div class="container">
             <button>All</button><button>Design</button><button>Identity</button><button>Ilustration</button>
 
             <img src="img/portifolio.png" alt="">
-
         </div>
     </section>
 
     <section id="contact">
-        <div class="container">
+        
+        <div class="container-topic">
+            <h2>Contact</h2>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc.</p>
+        </div>
+
+        <div class="container">
             <form action="">
                 <input type="text" placeholder="Enter your Name">
                 <input type="text" placeholder="Enter your Adress">
@@ -114,7 +135,6 @@
             </form>
 
             <button>Submit</button>
-
         </div>
     </section>
 

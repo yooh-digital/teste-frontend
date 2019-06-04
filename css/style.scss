@@ -10,8 +10,15 @@ $cor-fonte: #6b6b6b;
 $tamanho-fonte-logo: 20px;
 $tamanho-fonte-nav: 13px;
 $tamanho-fonte-geral: 12px;
+$tamanho-fonte-nome: 18px;
 $tamanho-fonte-tituto: 30px;
 $tamanho-fonte-subtitulo: 20px;
+
+//espaçamentos margin
+$margem-titulo: 30px 0 30px 0;
+$margem-subtitulo: 20px 0 20px 0;
+$margem-paragrafo: 20px 0 20px 0;
+$margem-imagem: 20px 0 20px 0;
 
 // Global
 * {
@@ -29,6 +36,12 @@ ul {
     width: 70%; // espaçãmento só de um lado (cobrindo *80% da pagian)
     margin: auto; // espaçamento vai para os dois lado CENTRALIZANDO o conteudo
     overflow: hidden; // nao colocar scroll quando algo sair da div   
+}
+
+.container-topic { // container do começo de cada seçao
+    width: 50%;
+    margin: auto; 
+    overflow: hidden;
 }
 
 //---------------
@@ -125,6 +138,36 @@ body {
         background-color: $cor-secundaria;
         color: $cor-fonte;
         text-align: center;
+        margin-top: 30px;
+
+        h2 {
+            margin: $margem-titulo;
+            font-size: $tamanho-fonte-tituto;
+        }
+
+        .box {
+            float: left;
+            width: 25%;
+            margin: $margem-titulo;
+            
+            img {
+                width: 100%;
+            }
+
+            .nome {
+                font-size: $tamanho-fonte-nome;
+            }
+
+            button {
+                margin: 10px;
+                background-color: $cor-principal;
+                border: 1px $cor-principal;
+                padding: 8px 30px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+        }
     }
 
     
