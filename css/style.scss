@@ -2,14 +2,16 @@
 $cor-principal: #2c3e50;
 $cor-secundaria: #eeeeee;
 $cor-base: #ffffff;
-$cor-borda:  #2c3e40;
+$cor-borda:  #253342;
 $cor-menus-nav: #7e95ae;
-
+$cor-fonte: #6b6b6b;
 
 // tamanho de fonte principais
-$tamanho-fonte-nav: 14px;
-$tamanho-fonte-geral: 15px;
-
+$tamanho-fonte-logo: 20px;
+$tamanho-fonte-nav: 13px;
+$tamanho-fonte-geral: 12px;
+$tamanho-fonte-tituto: 30px;
+$tamanho-fonte-subtitulo: 20px;
 
 // Global
 * {
@@ -23,11 +25,18 @@ ul {
     padding: 0;
 }
 
+.container {
+    width: 70%; // espaçãmento só de um lado (cobrindo *80% da pagian)
+    margin: auto; // espaçamento vai para os dois lado CENTRALIZANDO o conteudo
+    overflow: hidden; // nao colocar scroll quando algo sair da div   
+}
+
 //---------------
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: $tamanho-fonte-geral;
+    color: $cor-fonte;
     line-height: 1.5; //espaço entre linhas
 
     header {
@@ -35,13 +44,14 @@ body {
         color: $cor-base;
         padding-top: 20px;
         min-height: 50px; // ajuste com espaço menor
-        border-bottom: $cor-borda 3px solid;
+        border-bottom: $cor-borda 1px solid;
 
         #logo {
             float: left;
 
             h2 {
                 margin: 0;
+                font-size: $tamanho-fonte-logo;
             }
         }
 
@@ -59,7 +69,6 @@ body {
                         color: $cor-menus-nav;
                         text-decoration: none;
                         font-size: $tamanho-fonte-nav;
-                        font-weight: bold;
                     }
 
                     a:hover {
@@ -68,14 +77,57 @@ body {
                 }
             }
         }
-
     }
 
-    .container {
-        width: 70%; // espaçãmento só de um lado (cobrindo *80% da pagian)
-        margin: auto; // espaçamento vai para os dois lado CENTRALIZANDO o conteudo
-        overflow: hidden; // nao colocar scroll quando algo sair da div
-        
+    #start {
+        //min-height: 400px;
+        background-color: $cor-principal;
+        color: $cor-base;
+        text-align: center;
+
+        h2 {
+            margin: 30px 0 30px 0;
+            font-size: $tamanho-fonte-tituto;
+        }
+
+        h3 {
+            margin: 20px 0 20px 0;
+            font-size: $tamanho-fonte-subtitulo; 
+        }
+
+        img {
+            margin: 20px 0 20px 0;
+            width: 500px;
+        }
     }
+
+    #about {
+        background-color: $cor-base;
+        color: $cor-fonte;
+        text-align: center;
+
+        h2 {
+            margin: 30px 0 30px 0;
+            font-size: $tamanho-fonte-tituto;
+        }
+
+        p {
+            margin: 20px 0 20px 0;
+        }
+
+        img {
+            margin: 20px 0 20px 0;
+            width: 400px;
+        }
+    }
+
+    #team {
+        background-color: $cor-secundaria;
+        color: $cor-fonte;
+        text-align: center;
+    }
+
+    
+    
 }
 

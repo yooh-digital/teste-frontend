@@ -8,9 +8,16 @@ ul {
   padding: 0;
 }
 
+.container {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 12px;
+  color: #6b6b6b;
   line-height: 1.5;
 }
 
@@ -19,7 +26,7 @@ body header {
   color: #ffffff;
   padding-top: 20px;
   min-height: 50px;
-  border-bottom: #2c3e40 3px solid;
+  border-bottom: #253342 1px solid;
 }
 
 body header #logo {
@@ -28,6 +35,7 @@ body header #logo {
 
 body header #logo h2 {
   margin: 0;
+  font-size: 20px;
 }
 
 body header nav {
@@ -44,17 +52,57 @@ body header nav ul li {
 body header nav ul li a {
   color: #7e95ae;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 13px;
 }
 
 body header nav ul li a:hover {
   color: #fffa;
 }
 
-body .container {
-  width: 70%;
-  margin: auto;
-  overflow: hidden;
+body #start {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+}
+
+body #start h2 {
+  margin: 30px 0 30px 0;
+  font-size: 30px;
+}
+
+body #start h3 {
+  margin: 20px 0 20px 0;
+  font-size: 20px;
+}
+
+body #start img {
+  margin: 20px 0 20px 0;
+  width: 500px;
+}
+
+body #about {
+  background-color: #ffffff;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+body #about h2 {
+  margin: 30px 0 30px 0;
+  font-size: 30px;
+}
+
+body #about p {
+  margin: 20px 0 20px 0;
+}
+
+body #about img {
+  margin: 20px 0 20px 0;
+  width: 400px;
+}
+
+body #team {
+  background-color: #eeeeee;
+  color: #6b6b6b;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
