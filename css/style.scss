@@ -14,11 +14,12 @@ $tamanho-fonte-nome: 18px;
 $tamanho-fonte-tituto: 30px;
 $tamanho-fonte-subtitulo: 20px;
 
-//espaçamentos margin
+//espaçamentos margin embaixo e emcime
 $margem-titulo: 30px 0 30px 0;
 $margem-subtitulo: 20px 0 20px 0;
 $margem-paragrafo: 20px 0 20px 0;
 $margem-imagem: 20px 0 20px 0;
+$margem-box : 30px 0 30px 0;
 
 // Global
 * {
@@ -99,17 +100,17 @@ body {
         text-align: center;
 
         h2 {
-            margin: 30px 0 30px 0;
+            margin: $margem-titulo;
             font-size: $tamanho-fonte-tituto;
         }
 
         h3 {
-            margin: 20px 0 20px 0;
+            margin: $margem-subtitulo;
             font-size: $tamanho-fonte-subtitulo; 
         }
 
         img {
-            margin: 20px 0 20px 0;
+            margin: $margem-imagem;
             width: 500px;
         }
     }
@@ -120,16 +121,16 @@ body {
         text-align: center;
 
         h2 {
-            margin: 30px 0 30px 0;
+            margin: $margem-titulo;
             font-size: $tamanho-fonte-tituto;
         }
 
         p {
-            margin: 20px 0 20px 0;
+            margin: $margem-paragrafo;
         }
 
         img {
-            margin: 20px 0 20px 0;
+            margin: $margem-imagem;
             width: 400px;
         }
     }
@@ -138,7 +139,6 @@ body {
         background-color: $cor-secundaria;
         color: $cor-fonte;
         text-align: center;
-        margin-top: 30px;
 
         h2 {
             margin: $margem-titulo;
@@ -148,7 +148,7 @@ body {
         .box {
             float: left;
             width: 25%;
-            margin: $margem-titulo;
+            margin: $margem-box;
             
             img {
                 width: 100%;
@@ -160,17 +160,113 @@ body {
 
             button {
                 margin: 10px;
+                border-radius: 2px;
                 background-color: $cor-principal;
-                border: 1px $cor-principal;
-                padding: 8px 30px;
-                border-radius: 5px;
+                border: 0;
                 cursor: pointer;
             }
 
         }
     }
 
+    #portifolio {
+        background-color: $cor-base;
+        color: $cor-fonte;
+        text-align: center;
+
+        h2 {
+            margin: $margem-titulo;
+            font-size: $tamanho-fonte-tituto;
+        }
+
+        p {
+            margin: $margem-paragrafo;
+        }
+
+        #group-buttons {
+            clear: left;
+
+            button {
+                margin: 5px;
+                padding: 5px 20px;
+                border-radius: 2px;
+                background-color: $cor-base;
+                color: #a1a1a1;
+                border: 1px solid #a1a1a1;
+                cursor: pointer;
+            }    
+        }
+          
+        .box {
+            float: left;
+            width: 33%;
+
+            figure {
+                position: relative;
+                width: 250px;  
+                margin: 30px;
+                
+                img {
+                    //position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
     
+                figcaption {
+                    
+                    .nome {
+                        font-size: $tamanho-fonte-nome;
+                    }            
+    
+                    position: absolute;
+                    bottom: 5px;
+                    background-color: rgba(0, 0, 0, .3);
+                    color: white;
+                    width: 100%;
+                    height: 30%;
+                    padding: 7px;
+                    text-align: left;
+                    font-size: $tamanho-fonte-geral;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+
+    #contact {
+        background-color: $cor-secundaria;
+        color: $cor-fonte;
+        text-align: center;
+
+        h2 {
+            margin: $margem-titulo;
+            font-size: $tamanho-fonte-tituto;
+        }
+
+        p {
+            margin: $margem-paragrafo;
+        }
+
+        form {
+            input {
+                width: 60%;
+            }
+        }
+
+        button {
+            .nome {
+                font-size: $tamanho-fonte-nome;
+            }
+
+            margin: 10px;
+            padding: 10px 40px;
+            border-radius: 2px;
+            background-color: $cor-principal;
+            color: $cor-base;
+            border: 0;
+            cursor: pointer;
+        }
+    }
     
 }
 

@@ -110,7 +110,6 @@ body #team {
   background-color: #eeeeee;
   color: #6b6b6b;
   text-align: center;
-  margin-top: 30px;
 }
 
 body #team h2 {
@@ -134,10 +133,105 @@ body #team .box .nome {
 
 body #team .box button {
   margin: 10px;
+  border-radius: 2px;
   background-color: #2c3e50;
-  border: 1px #2c3e50;
-  padding: 8px 30px;
-  border-radius: 5px;
+  border: 0;
   cursor: pointer;
+}
+
+body #portifolio {
+  background-color: #ffffff;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+body #portifolio h2 {
+  margin: 30px 0 30px 0;
+  font-size: 30px;
+}
+
+body #portifolio p {
+  margin: 20px 0 20px 0;
+}
+
+body #portifolio #group-buttons {
+  clear: left;
+}
+
+body #portifolio #group-buttons button {
+  margin: 5px;
+  padding: 5px 20px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #a1a1a1;
+  border: 1px solid #a1a1a1;
+  cursor: pointer;
+}
+
+body #portifolio .box {
+  float: left;
+  width: 33%;
+}
+
+body #portifolio .box figure {
+  position: relative;
+  width: 250px;
+  margin: 30px;
+}
+
+body #portifolio .box figure img {
+  width: 100%;
+  height: 100%;
+}
+
+body #portifolio .box figure figcaption {
+  position: absolute;
+  bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  width: 100%;
+  height: 30%;
+  padding: 7px;
+  text-align: left;
+  font-size: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body #portifolio .box figure figcaption .nome {
+  font-size: 18px;
+}
+
+body #contact {
+  background-color: #eeeeee;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+body #contact h2 {
+  margin: 30px 0 30px 0;
+  font-size: 30px;
+}
+
+body #contact p {
+  margin: 20px 0 20px 0;
+}
+
+body #contact form input {
+  width: 60%;
+}
+
+body #contact button {
+  margin: 10px;
+  padding: 10px 40px;
+  border-radius: 2px;
+  background-color: #2c3e50;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+
+body #contact button .nome {
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */
