@@ -27,11 +27,6 @@ $margem-box : 30px 0 30px 0;
     padding: 0;
     margin: 0;
 }
-ul {
-    //tirando valores default da lista 
-    margin: 0;
-    padding: 0;
-}
 
 .container {
     width: 70%; // espaçãmento só de um lado (cobrindo *80% da pagian)
@@ -42,6 +37,12 @@ ul {
 .container-topic { // container do começo de cada seçao
     width: 50%;
     margin: auto; 
+    overflow: hidden;
+}
+
+.container-box {
+    width: 80%;
+    margin: auto;
     overflow: hidden;
 }
 
@@ -147,8 +148,8 @@ body {
 
         .box {
             float: left;
-            width: 25%;
-            margin: $margem-box;
+            width: 186px;
+            margin: 30px 25px; //emcima e embaixo / esuerda e direita
             
             img {
                 width: 100%;
@@ -199,35 +200,34 @@ body {
           
         .box {
             float: left;
-            width: 33%;
+            width: 274px;
+            margin: 20px 20px;
 
             figure {
                 position: relative;
-                width: 250px;  
-                margin: 30px;
+                width: 100%;  
                 
                 img {
-                    //position: absolute;
                     width: 100%;
-                    height: 100%;
                 }
     
                 figcaption {
                     
-                    .nome {
-                        font-size: $tamanho-fonte-nome;
-                    }            
-    
+                    width: 100%;            
+                    height: 30%;
+
                     position: absolute;
                     bottom: 5px;
                     background-color: rgba(0, 0, 0, .3);
                     color: white;
-                    width: 100%;
-                    height: 30%;
                     padding: 7px;
                     text-align: left;
                     font-size: $tamanho-fonte-geral;
                     box-sizing: border-box;
+
+                    .nome {
+                        font-size: $tamanho-fonte-nome;
+                    }
                 }
             }
         }
@@ -248,8 +248,21 @@ body {
         }
 
         form {
+            margin-top: 10px;
+
             input {
-                width: 60%;
+                width: 500px;
+                padding: 5px 5px;
+                margin-bottom: 10px;
+                border: 1px solid $cor-fonte;
+                border-radius: 3px;
+            }
+            textarea {
+                width: 500px;
+                height: 100px;
+                padding: 5px 5px;
+                border: 1px solid $cor-fonte;
+                border-radius: 3px;
             }
         }
 
@@ -258,7 +271,7 @@ body {
                 font-size: $tamanho-fonte-nome;
             }
 
-            margin: 10px;
+            margin: 50px;
             padding: 10px 40px;
             border-radius: 2px;
             background-color: $cor-principal;
@@ -267,6 +280,23 @@ body {
             cursor: pointer;
         }
     }
-    
+
+    footer {
+        ul {
+            text-align: center;
+            margin: 20px 20px;
+
+            li {
+                display: inline;
+                padding: 0 15px 0 15px; //distanciamento entre menus
+
+                a {
+                    color: $cor-fonte;
+                    text-decoration: none;
+                    font-size: $tamanho-fonte-nav;
+                }
+            }
+        }
+    }    
 }
 
