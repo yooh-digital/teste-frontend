@@ -7,12 +7,12 @@
     <meta name="author" content="Nanderson Rodrigues">
     <title>Document</title>
 
-    <link href="css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link href="/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     
 </head>
 <body>
-
     <header>
         <div class="container">
             <div id="logo">
@@ -20,11 +20,11 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Team</a></li>
-                    <li><a href="">Protifolio</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a class="active" href="#start">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#portifolio">Protifolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -66,7 +66,7 @@
                     <p class="nome">Name</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                       
-                    <button>Email</button>
+                    <button><i class="far fa-envelope"></i></button>
 
                  
             </div> 
@@ -76,7 +76,7 @@
                     <p class="nome">Name</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 
-                    <button>Email</button>
+                    <button><i class="far fa-envelope"></i></button>
                 
             </div>
             <div class="box">
@@ -85,7 +85,7 @@
                     <p class="nome">Name</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 
-                    <button>Email</button>
+                    <button><i class="far fa-envelope"></i></button>
                 
             </div>   
             <div class="box">
@@ -94,7 +94,7 @@
                     <p class="nome">Name<p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 
-                    <button>Email</button>
+                    <button><i class="far fa-envelope"></i></button>
                 
             </div>
             
@@ -113,18 +113,20 @@
         <div class="container">
 
             <div id="group-buttons">
-                <button>All</button>
-                <button>Design</button>
-                <button>Identity</button>
-                <button>Photography</button>
-                <button>Ilustration</button>
-            </div>    
+                <button class="active2 all">All</button>
+                <button class="design">Design</button>
+                <button class="identify">Identity</button>
+                <button class="photography">Photography</button>
+                <button class="ilustration">Ilustration</button>
+            </div>  
+            
+            <div id="boxes"></div>
 
             <div class="box">
                 
-                <figure>
+                <figure class="design all">
                     <img src="img/image-portifolio.png" alt="">
-                    <figcaption>
+                    <figcaption >
                         <span class="nome">Design</span><br>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     </figcaption>
@@ -134,7 +136,7 @@
 
             <div class="box">
                 
-                    <figure>
+                    <figure class="nome identify all">
                         <img src="img/image-portifolio.png" alt="">
                         <figcaption>
                             <span class="nome">Identify</span><br>
@@ -146,7 +148,7 @@
 
             <div class="box">
                 
-                    <figure>
+                    <figure class="nome design all">
                         <img src="img/image-portifolio.png" alt="">
                         <figcaption>
                             <span class="nome">Design</span><br>
@@ -158,7 +160,7 @@
 
             <div class="box">
                 
-                    <figure>
+                    <figure class="photography all">
                         <img src="img/image-portifolio.png" alt="">
                         <figcaption>
                             <span class="nome">Photography</span><br>
@@ -170,10 +172,10 @@
 
             <div class="box">
                 
-                    <figure>
+                    <figure class="design all">
                         <img src="img/image-portifolio.png" alt="">
                         <figcaption>
-                            <span class="nome">Nome</span><br>
+                            <span class="nome">Design</span><br>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         </figcaption>
                     </figure>
@@ -182,7 +184,7 @@
 
             <div class="box">
                 
-                    <figure>
+                    <figure class="identify all">
                         <img src="img/image-portifolio.png" alt="">
                         <figcaption>
                             <span class="nome">Identify</span><br>
@@ -194,7 +196,7 @@
 
             <div class="box">
                 
-                    <figure>
+                    <figure class="ilustration all">
                         <img src="img/image-portifolio.png" alt="">
                         <figcaption>
                             <span class="nome">Ilustration</span><br>
@@ -206,7 +208,7 @@
 
             <div class="box">
                 
-                    <figure>
+                    <figure class="ilustration all">
                         <img src="img/image-portifolio.png" alt="">
                         <figcaption>
                             <span class="nome">Ilustration</span><br>
@@ -218,7 +220,7 @@
 
             <div class="box">
                 
-                    <figure>
+                    <figure class="design all">
                         <img src="img/image-portifolio.png" alt="">
                         <figcaption>
                             <span class="nome">Design</span><br>
@@ -240,7 +242,7 @@
         </div>
 
         <div class="container">
-            <form action="">
+            <form id="formulario" action="">
                 <input type="text" placeholder="Enter your Name"><br>
                 <input type="text" placeholder="Enter your Adress"><br>
                 <input type="text" placeholder="Enter your City"><br>
@@ -255,14 +257,19 @@
     <footer>
         <div class="container">
             <ul>
-                <li><a href="">Home</a></li> :
-                <li><a href="">About</a></li> :
-                <li><a href="">Team</a></li> :
-                <li><a href="">Protifolio</a></li> :
-                <li><a href="">Contact</a></li> <br><br>
+                <li><a href="#start">Home</a></li> :
+                <li><a href="#about">About</a></li> :
+                <li><a href="#team">Team</a></li> :
+                <li><a href="#portifolio">Protifolio</a></li> :
+                <li><a href="#contact">Contact</a></li> <br><br>
                 <p>Copyright &#169; your Company 2014 All Right reserved<p>
             </ul>
         </div>
     </footer>
 </body>
+<script src="js/scroll.js"></script>
+<script src="js/barraNavCor.js"></script>
+<script src="js/botoesPortifolioCor.js"></script>
+<!--<script src="js/formulario.js"></script>-->
+<!--<script src="js/botoesPortifolioSelecao.js"></script>-->
 </html>

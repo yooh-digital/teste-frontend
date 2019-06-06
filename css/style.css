@@ -15,14 +15,12 @@
   overflow: hidden;
 }
 
-.container-box {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
+.active {
+  color: #ffffff;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 12px;
   color: #6b6b6b;
   line-height: 1.5;
@@ -34,6 +32,11 @@ body header {
   padding-top: 20px;
   min-height: 50px;
   border-bottom: #253342 1px solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 body header #logo {
@@ -51,7 +54,6 @@ body header nav {
 }
 
 body header nav ul li {
-  float: left;
   display: inline;
   padding: 0 15px 0 15px;
 }
@@ -67,6 +69,7 @@ body header nav ul li a:hover {
 }
 
 body #start {
+  margin-top: 70px;
   background-color: #2c3e50;
   color: #ffffff;
   text-align: center;
@@ -134,10 +137,16 @@ body #team .box .nome {
 
 body #team .box button {
   margin: 10px;
+  padding: 8px 15px;
   border-radius: 2px;
   background-color: #2c3e50;
+  color: #ffffff;
   border: 0;
   cursor: pointer;
+}
+
+body #team .box button:hover {
+  background-color: #253342;
 }
 
 body #portifolio {
@@ -167,6 +176,16 @@ body #portifolio #group-buttons button {
   color: #a1a1a1;
   border: 1px solid #a1a1a1;
   cursor: pointer;
+}
+
+body #portifolio #group-buttons button:hover {
+  border-color: #2c3e50;
+  color: #2c3e50;
+}
+
+body #portifolio #group-buttons button .active2 {
+  color: #2c3e50;
+  border-color: #2c3e50;
 }
 
 body #portifolio .box {
@@ -249,6 +268,10 @@ body #contact button {
 
 body #contact button .nome {
   font-size: 18px;
+}
+
+body #contact button:hover {
+  background-color: #253342;
 }
 
 body footer ul {
