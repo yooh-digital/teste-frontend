@@ -1,0 +1,24 @@
+{
+  "name": "teste-frontend",
+  "version": "1.0.0",
+  "description": "Teste vaga front-end",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdAngelis/teste-frontend.git"
+  },
+  "author": "Ed Angelis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdAngelis/teste-frontend/issues"
+  },
+  "homepage": "https://github.com/EdAngelis/teste-frontend#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0"
+  }
+}

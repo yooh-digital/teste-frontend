@@ -1,0 +1,176 @@
+$proximaNovaFont : "proxima-nova, sans-serif";
+$fontP: 20px;
+
+/* ### Top Bar ### */
+.navTop {
+  background-color: #2c3e50;
+  div ul{
+    position: relative; 
+    left: 60%;
+  }
+  img {
+    position: relative;
+    height: 50px; 
+  } 
+  ul li a{
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+}}
+
+  /* ### Banner  ###*/
+#banner {
+  background-color:#2c3e50;
+  height: 9in; 
+  text-align: center;
+  h1 {
+    font-family: $proximaNovaFont;
+    color: white;
+    font-size: 60px;
+    padding-top: 0.4in; 
+  }
+  h5{
+    font-family: $proximaNovaFont;
+    font-weight: 300;
+    color: white;
+    font-size: 30px;
+    margin-top: 0.15in;
+  }
+  img{
+    height: 5.4in;
+    margin-top: 0.25in;
+  }
+}
+  
+/* ### About Us ### */ 
+#about{
+  text-align: center;
+  h5{
+    font-family: $proximaNovaFont;
+    padding-top: 0.2in;
+    font-size: 50px;        
+    top: 0.8in
+  }
+  p{
+    font-family: $proximaNovaFont;
+    font-size: $fontP;
+    margin-top: 0.25in;
+  }
+  img{
+    margin-top: 0.25in;
+  }
+}
+
+/* ### Our Team ### */
+#team{
+  background-color: #eeeeee;
+  text-align: center;
+  h5{
+    font-family: $proximaNovaFont;
+    padding-top: 0.2in;
+    font-size: 50px;
+  }
+  p{
+    font-size: $fontP;
+    font-family: $proximaNovaFont;
+    margin-top: 0.25in;
+}}
+.members{
+  margin-top: 0.4in;
+  img{
+    cursor: pointer;
+}}
+#emailBtn{
+  margin-top: 0.2in;
+}
+
+/* ### Portfolio ### */
+#portfolio{
+  margin-top: 0.4in;
+  text-align: center;
+  h5{
+    font-family: $proximaNovaFont;
+    padding-top: 0.3in;
+    font-size: 50px;}
+  p{
+    font-size: $fontP;
+    font-family: $proximaNovaFont;
+    margin-top: 0.25in;
+  }
+  nav li a{
+    border: 1px solid;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  nav div ul{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%)
+
+  }
+  .buttons{
+    position: relative;
+    margin-top: 0.4in;   
+}}
+/* ### Contact ### */
+#contact{
+  margin-top: 0.4in;
+  background-color: #eeeeee;
+  text-align: center;
+  h5{
+    font-family: $proximaNovaFont;
+    padding-top: 0.4in;
+    font-size: 50px;}
+  p{
+    font-size: $fontP;
+    font-family: $proximaNovaFont;
+    margin-top: 0.25in;
+  }
+  form{
+    margin-top: 0.6in;
+    position: relative;
+    left: 50%;
+    width: 7.7in;
+    transform: translate(-50%);
+    input{
+      border: 0.3px solid;
+    }
+    textarea{
+      border: 0.3px solid;
+    }
+    button{
+      background: rgb(32, 32, 68);
+      color: white;
+      font-size: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+}}}
+
+/* ### Footer ### */
+footer{
+  margin-top: 50px;
+  text-align: center;
+  div{
+    position: relative;}
+  nav a{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-right: 40px;
+  }  
+  .bottom-bar {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding:15px 0;
+  }
+  nav div ul{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%)
+
+}}
+
+
+
