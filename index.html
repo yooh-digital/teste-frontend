@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TESTE FRONT-END | ACÁCIO</title>
+    <script src="public/js/portfolio.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="public/bootstrap/compiler/bootstrap.css" rel="stylesheet">
+    <link href="public/style/css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+        
+    <div id="header">
+        <nav class="navbar fixed-top navbar-expand nav">
+            <div class="container">
+                <a class="navbar-brand logo text-white" href="#home">LOGO</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link scrollSuave" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scrollSuave" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scrollSuave" href="#ourTeam">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scrollSuave" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scrollSuave" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="home">
+        <div class="container mt-5">
+            <div class="row text-center">
+                <div class="col-12 mb-5">
+                    <h1 class="text-center mt-5">We Build Awesome Wireframe</h1>
+                    <p class="text-center lead">A Template by Your Company</p>
+                    <a href='#'><img src="./public/images/macbook-home.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container mt-5" id='about'>
+        <div class="row">
+            <div class="col-12">
+                <p class="title text-center">About Us</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <p class="subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 text-center">
+                <a href="#"><img class="mt-4 mb-4" src="./public/images/ipad-about.png"></a>
+                <p class="subtitle mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id='ourTeam'>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <p class="text-center title">Our Team</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <p class="subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                </div>
+            </div>
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-3 mb-2 text-center">
+                    <img class="image" src="./public/images/team-male.png" >
+                    <h5>Name</h5>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    <button type="button"><img src="./public/images/mail.png"></button>
+                </div>
+                <div class="col-lg-3 mb-2 text-center">
+                    <img class="image" src="./public/images/team-female.png" >
+                    <h5>Name</h5>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    <button type="button"><img src="./public/images/mail.png"></button>
+                </div>
+                <div class="col-lg-3 mb-2 text-center">
+                    <img class="image" src="./public/images/team-male.png" >
+                    <h5>Name</h5>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    <button type="button"><img src="./public/images/mail.png"></button>
+                </div>
+                <div class="col-lg-3 mb-2 text-center">
+                    <img class="image" src="./public/images/team-female.png" >
+                    <h5>Name</h5>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    <button type="button" class="mb-5"><img src="./public/images/mail.png"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='portfolio'>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <p class="text-center title">Portfolio</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 text-center mb-5">
+                    <p class="subtitle text-center mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <button type="button" onclick="allCards()">All</button>
+                    <button type="button" onclick="design()">Design</button>
+                    <button type="button" onclick="identity()">Identity</button>
+                    <button type="button" onclick="photography()">Photography</button>
+                    <button type="button" onclick="ilustration()">Ilustration</button>
+                </div>
+            </div>
+            <div id="telaDinamica" class="mb-5">
+                <div class="card-deck text-white">
+                    <div class="card">
+                        <img class="card-img-top" src="./public/images/image-card.png">
+                        <div class="card-body bgcards">
+                            <h5 class="card-title">Design</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./public/images/image-card.png">
+                        <div class="card-body bgcards">
+                            <h5 class="card-title">Identify</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./public/images/image-card.png">
+                        <div class="card-body bgcards">
+                            <h5 class="card-title">Design</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck mt-5 text-white">
+                    <div class="card">
+                        <img class="card-img-top" src="./public/images/image-card.png">
+                        <div class="card-body bgcards">
+                            <h5 class="card-title">Photography</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card bgcards">
+                        <img class="card-img-top" src="./public/images/img-link-portfolio.png">
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./public/images/image-card.png">
+                        <div class="card-body bgcards">
+                            <h5 class="card-title">Identify</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck mt-5 text-white mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="./public/images/image-card.png">
+                        <div class="card-body bgcards">
+                            <h5 class="card-title">Ilustration</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./public/images/image-card.png">
+                        <div class="card-body bgcards">
+                            <h5 class="card-title">Ilustration</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./public/images/image-card.png">
+                        <div class="card-body bgcards">
+                            <h5 class="card-title">Design</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='contact'>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <p class="text-center title">Contact</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <p class="subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6 text-center mb-5">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputName"></label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Enter your Name">
+                            <label for="inputAdress"></label>
+                            <input type="text" class="form-control" id="inputAdress" placeholder="Enter your Adress">
+                            <label for="inputCity"></label>
+                            <input type="text" class="form-control" id="inputCity" placeholder="Enter your City">
+                            <label for="inputEmail"></label>
+                            <input type="mail" class="form-control" id="inputEmail" placeholder="Enter your Email Adress">
+                            <label for="inputTextArea"></label>
+                            <textarea class="form-control" id="inputTextArea" rows="6" placeholder="Enter your Email Message"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 mb-3" id='footer'>
+        <div class="row text-center">
+            <div class="col-12">
+                <p><a href="#home" class="scrollSuave">Home</a> : <a href="#about" class="scrollSuave">About</a> : <a href="#ourTeam" class="scrollSuave">Team</a> : <a href="#portfolio" class="scrollSuave">Portfolio</a> : <a href="#contact" class="scrollSuave">Contact</a></p>
+                <p>Copyright &copy; Your Company 2014. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+        
+    
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="public/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript"> //Script para rolar suavemente entre as div's quando acionadas via clique em MENU's
+      $(document).ready(function($) {
+        $(".scrollSuave").click(function(event){
+          event.preventDefault();
+          $("html, body").animate({scrollTop:$(this.hash).offset().top}, 800);
+        });
+      });
+    </script>
+    <script src="public/popper.js/dist/umd/popper.min.js"></script>
+    <script src="public/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

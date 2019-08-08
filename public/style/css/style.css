@@ -1,0 +1,129 @@
+@font-face {
+  font-family: proximanovalight;
+  src: url("./fonts/proxima-nova-light.otf");
+}
+@font-face {
+  font-family: proximanovabold;
+  src: url("./fonts/proxima-nova-bold.otf");
+}
+.titleWhite, #home h1 {
+  color: #fff;
+  font: 36px proximanovalight;
+}
+
+.title {
+  font: 36px proximanovalight;
+  color: #606060;
+}
+
+.subtitle {
+  font: 14px proximanovalight;
+  color: #606060;
+}
+
+#header .nav {
+  background-color: #273646;
+  border-bottom: 1px solid #212D3A;
+  font: 15px proximanovalight;
+  color: #fff;
+  height: 10%;
+}
+#header li {
+  padding: 10px;
+}
+#header li a {
+  color: #fff;
+}
+#header li a:hover {
+  font: 18px proximanovalight;
+  transition: 0.5s;
+}
+#header .logo {
+  font: 20px proximanovabold;
+}
+
+#home {
+  background-color: #273646;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+#home img {
+  width: 50%;
+}
+
+#ourTeam {
+  background-color: #ECEBEB;
+  font: 36px proximanovalight;
+  width: 100%;
+  margin-top: 40px;
+}
+#ourTeam img.image {
+  width: 160px;
+  height: 160px;
+}
+#ourTeam h5 {
+  font: 17px proximanovalight;
+  color: #606060;
+  margin: 7px;
+}
+#ourTeam button {
+  background-color: #273646;
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+#portfolio button {
+  font: 15px proximanovalight;
+  color: #606060;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid 1px #C9C9C9;
+  border-radius: 3px;
+}
+#portfolio button:hover {
+  color: #fff;
+  background-color: #273646;
+}
+#portfolio .bgcards {
+  background-color: #8f8f8f;
+}
+#portfolio .card-deck :hover {
+  background-color: #273646;
+}
+
+#contact {
+  background-color: #ECEBEB;
+}
+#contact button {
+  background-color: #273646;
+  color: #fff;
+  border-radius: 2px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font: 20px proximanovalight;
+}
+#contact button:hover {
+  background-color: #8f8f8f;
+}
+
+#footer a {
+  font: 15px proximanovalight;
+  padding: 15px;
+  color: #606060;
+}
+#footer a:hover {
+  font: 18px proximanovalight;
+  transition: 0.5s;
+}
+#footer p {
+  color: #949394;
+  font: 14px proximanovalight;
+}
+
+/*# sourceMappingURL=style.css.map */

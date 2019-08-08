@@ -1,0 +1,148 @@
+@font-face{ //Adiciona fonte Proxima Nova Light
+    font-family: proximanovalight;
+    src: url('./fonts/proxima-nova-light.otf')
+}
+@font-face{ //Adiciona fonte Proxima Nova Bold
+    font-family: proximanovabold;
+    src: url('./fonts/proxima-nova-bold.otf')
+}
+
+//FONTE PROXIMA NOVA LIGHT E BOLD
+$proximaFont-light: proximanovalight;
+$proximaFont-bold: proximanovabold;
+
+//PALETA DE CORES
+$main-color: #273646;
+$color-white: #fff;
+$color-subtitle: #606060;
+$color-grey-background: #ECEBEB;
+$color-bgCard: #8f8f8f;
+
+.titleWhite{ //Classe para definição dos títulos com fonte na cor BRANCA
+    color: $color-white;
+    font: 36px $proximaFont-light;
+}
+
+.title{ //Classe para definição dos títulos com fonte na cor 'cinza'
+    font: 36px $proximaFont-light;
+    color: $color-subtitle;
+}
+
+.subtitle{ // Classe para definição dos subtítulos com fonte na cor 'cinza'
+    font: 14px $proximaFont-light;
+    color: $color-subtitle;
+}
+
+#header{ //Definições para a div HEADER
+    .nav{
+        background-color: $main-color; //Define cor do Background da navbar
+        border-bottom: 1px solid #212D3A; //Insere uma borda ao final da navbar
+        font: 15px $proximaFont-light; //Define tamanho e fonte para textos com exceção da LOGO
+        color: $color-white; //Cor da fonte dos textos
+        height: 10%; //Altura da navbar em 10%, irá ocupar 10% da tela
+    }
+    li{ //Define padding de 10px no li
+        padding: 10px;
+    }
+    li a{ //Define cor branca para os link's do li
+        color: $color-white;
+    }
+    li a:hover{ //Altera tamanho da fonte com efeito de transição ao passar o mouse
+        font: 18px $proximaFont-light;
+        transition: .5s;
+    }
+    .logo{ // Classe para definir fonte BOLD no 'LOGO'
+        font: 20px $proximaFont-bold;
+    }
+}
+
+#home{ //Definições para a div HOME
+    background-color: $main-color; //Define cor de fundo
+    width: 100%; //Define largura
+    height: 100%; // Define altura
+    color: $color-white; // Define cor da fonte
+    h1{ // Reutiliza a classe titleWhite para o h1
+        @extend .titleWhite;
+    }
+    img {
+        width: 50%; // Reduz imagem/tela em 50%
+    }
+}
+
+#ourTeam{ //Definições para a div OURTEAM
+    background-color: $color-grey-background; //Define cor de fundo
+    font: 36px $proximaFont-light; //Define tamanho e fonte
+    width: 100%; //Define largura
+    margin-top: 40px; // Define margem acima
+    img.image{ //Definições para imagens que utilizam a classe 'image' da div ourTeam
+        width: 160px; //Define largura em 160px
+        height: 160px; //Define altura em 160px
+    }
+    h5{
+        font: 17px $proximaFont-light; //Define tamanho e fonte
+        color: $color-subtitle; //Define cor da fonte
+        margin: 7px; //Define margem
+    }
+    button{
+        background-color: $main-color; //Define cor de fundo
+        border-radius: 3px; //Insere uma borda arredondada
+        padding-left: 15px; //Define padding a esquerda
+        padding-right: 15px; //Define padding a direita
+        padding-bottom: 0px; //Define padding abaixo
+        padding-top: 0px; //Define tamanho e fonte para texto
+    }
+}
+
+#portfolio{ //Definições para a div PORTFOLIO
+    button{
+        font: 15px $proximaFont-light;
+        color: $color-subtitle;
+        padding-top: 7px; //Define padding acima
+        padding-bottom: 7px; //Define padding abaixo
+        padding-left: 20px; //Define padding a esquerda
+        padding-right: 20px; //Define padding a direita
+        border: solid 1px #C9C9C9; //Insere borda e cor
+        border-radius: 3px; //Define borda arredondada
+    }
+    button:hover{ //Definições ao passar o mouse nos botões
+        color: $color-white; //Altera cor da fonte
+        background-color: $main-color; //Altera cor de fundo
+    }
+    .bgcards{ //Classe que define cor de fundo onde ficam os títulos e descrição do card, logo abaixo da imagem
+        background-color: $color-bgCard;
+    }
+    .card-deck :hover{ //Definições ao passar o mouse pelos card's
+        background-color: $main-color; // Altera cor de fundo
+    }
+}
+
+#contact{ //Definições para a div CONTACT
+    background-color: $color-grey-background;
+    button{
+        background-color: $main-color; // Define cor de fundo
+        color: $color-white;
+        border-radius: 2px; // Define borda arredondada de 2px
+        padding-left: 50px; // Define paddinga a esquerda
+        padding-right: 50px; // Define padding a direita
+        font: 20px $proximaFont-light; // Define tamanho e fonte para os textos
+    }
+    button:hover{ //Altera cor de fundo do botão submit ao passar o mouse
+        background-color: $color-bgCard;
+    }
+}
+
+#footer{ //Definições para a div FOOTER
+    a{ //Define fonte, tamanho, padding e cor para os link's
+        font: 15px $proximaFont-light;
+        padding: 15px;
+        color: $color-subtitle;
+    }
+    a:hover{ //Altera tamanho da fonte com efeito de transição ao passar o mouse
+        font: 18px $proximaFont-light;
+        transition: .5s;
+    }
+    p{ // Define cor, tamanho e fonte para o parágrafo
+        color: #949394;
+        font: 14px $proximaFont-light;
+    }
+}
