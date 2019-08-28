@@ -19,6 +19,7 @@
   "homepage": "https://github.com/LuanDc/teste-frontend#readme",
   "dependencies": {
     "gulp": "^4.0.2",
+    "gulp-sync": "^0.1.4",
     "node-normalize-scss": "^8.0.1"
   },
   "devDependencies": {

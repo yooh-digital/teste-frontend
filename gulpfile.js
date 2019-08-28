@@ -19,3 +19,4 @@ function compilaSass() {
 function watch() {
   gulp.watch("src/scss/**/*.scss", compilaSass);
 }
+
