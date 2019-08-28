@@ -20,6 +20,7 @@
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-sync": "^0.1.4",
+    "jquery": "^3.4.1",
     "node-normalize-scss": "^8.0.1"
   },
   "devDependencies": {
