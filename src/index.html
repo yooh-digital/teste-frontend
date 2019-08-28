@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Document</title>
     <meta charset="UTF-8" />
@@ -12,54 +11,70 @@
         <div class="container">
             <div class="row">
                 <div class="six columns cabecalho__logo">
-                    logo
+                    <a href="#home">logo</a>
                 </div>
                 <nav class="six columns cabecalho__nav-bar">
                     <ul>
-                        <li class="cabecalho__nav-bar__menu cabecalho__nav-bar__menu-active">home</li>
-                        <li class="cabecalho__nav-bar__menu">about</li>
-                        <li class="cabecalho__nav-bar__menu">team</li>
-                        <li class="cabecalho__nav-bar__menu">portfolio</li>
-                        <li class="cabecalho__nav-bar__menu">contato</li>
+                        <li class="cabecalho__nav-bar__menu">
+                            <a class="cabecalho__nav-bar__menu--active" href="#home">home</a> 
+                        </li>
+                        <li class="cabecalho__nav-bar__menu">
+                            <a href="#about">about</a>        
+                        </li>
+                        <li class="cabecalho__nav-bar__menu">
+                            <a href="#team">team</a>
+                        </li>
+                        <li class="cabecalho__nav-bar__menu">
+                            <a href="#portfolio">portfolio</a>
+                        </li>
+                        <li class="cabecalho__nav-bar__menu">
+                            <a href="#contato">contato</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <section class="banner">
-        <div class="container">
-            <h1 class="title">We Build Awesome Wireframe</h2>
-                <h2 class="sub-title">A Template by Your Company</h2>
-                <img src="./images/macbook.png" alt="macbookpro">
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <h1 class="title">
-                    About Us
-                </h1>
-                <p class="text">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. Cum sociis
-                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
-                <img src="./images/ipad-device.png" alt="ipad">
-                <p class="text">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. Cum sociis natoque penatibus et magnis dis
-                    parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                    quis, sem. Nulla consequat massa quis enim.
-                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                </p>
+    <main>
+        <section id="home"class="banner">
+            <div class="container">
+                <h1 class="title">We Build Awesome Wireframe</h2>
+                    <h2 class="sub-title">A Template by Your Company</h2>
+                    <img src="./images/macbook.png" alt="macbookpro">
             </div>
-        </div>
-    </section>
-    <section class="our-team">
-        <h1 class="title">Our Team</h1>
-        <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
+        </section>
+        <section>
+            <div id="about" class="container">
+                <div class="row">
+                    <h1 class="title">
+                        About Us
+                    </h1>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean
+                        massa. Cum sociis
+                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    </p>
+                    <img src="./images/ipad-device.png" alt="ipad">
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean
+                        massa. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                        pretium
+                        quis, sem. Nulla consequat massa quis enim.
+                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="team" class="our-team">
+            <h1 class="title">Our Team</h1>
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. Cum sociis
                 natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-    </section>
+        </section>
+    </main>
 </body>
 
 </html>

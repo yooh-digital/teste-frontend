@@ -7,17 +7,20 @@ $browser-context: 16;
 @mixin menu-item {
     list-style: none;
     font-size: em(15);
-    color: #7e95ae;
     margin-right: 40px;
     cursor: pointer;
+    a {
+        color: #7e95ae;
+        text-decoration: none;
+        &.cabecalho__nav-bar__menu--active {
+            color: $white;
+        };
+        &:hover {
+            color: $white;
+        };
+    };
     &:last-child {
         margin-right: 0;
-    };
-    &.cabecalho__nav-bar__menu-active {
-        color: $white;
-    }
-    &:hover {
-        color: $white;
     };
     &:first-letter {
         text-transform: uppercase;
