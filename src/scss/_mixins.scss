@@ -24,9 +24,10 @@ $browser-context: 16;
     }
 }
 
-@mixin title($color: $grey, ) {
+@mixin title($color: $grey, $size: 45) {
     color: $color;
-    font-size: em(45);
+    font-size: em($size);
     font-weight: lighter;
-    margin: 58px 0 35px 0;
+    margin-bottom: 35px;
+    text-align: center;
 }

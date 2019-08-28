@@ -1,13 +1,15 @@
 @import "reset";
+@import "normalize";
 @import "variables";
 @import "mixins";
 @import "skeleton";
-
 
 .header-bar {
     height: 74px;
     background-color: $primary;
     border-bottom: solid 1px #253342;
+    display: flex;
+    align-items: center;
     .cabecalho__logo {
         color: $white;
         font-size: em(30);
@@ -16,8 +18,11 @@
     };
     .cabecalho__nav-bar {
         ul {
+            height: 100%;
             display: flex;
             justify-content: flex-end;
+            margin-bottom: 0;
+            align-items: center;
             li {
                 @include menu-item;
             }
@@ -25,6 +30,36 @@
     }
 }
 
+section {
+    padding: 56px 0 66px 0;
+    text-align: center;
+    .row {
+        text-align: center;
+    };
+    &.our-team {
+        background-color: $secondary-grey;
+    }
+}
+
+.banner {
+    background-color: $primary;
+    .title {
+        @include title($white);
+    };
+    .sub-title {
+        @include title($white, 25);
+    }
+}
+
 .title {
-    @include title;
+    @include title(); 
+}
+
+.text {
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 21px;
+    color: $grey;
+    max-width: 800px;
+    margin: 35px auto;
 }
