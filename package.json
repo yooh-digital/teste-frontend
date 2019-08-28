@@ -1,0 +1,28 @@
+{
+  "name": "teste-frontend",
+  "version": "1.0.0",
+  "description": "## Descrição: Usando as tecnologias (HTML, CSS e JS), deverá ser feito o front-end do arquivo `layout/example.psd`, no arquivo contem um wireframe de uma one page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuanDc/teste-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuanDc/teste-frontend/issues"
+  },
+  "homepage": "https://github.com/LuanDc/teste-frontend#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "node-normalize-scss": "^8.0.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
+}
