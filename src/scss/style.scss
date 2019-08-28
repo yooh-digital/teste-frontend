@@ -1,6 +1,30 @@
+@import "reset";
 @import "variables";
 @import "mixins";
+@import "skeleton";
 
-h1 {
-    font-family: 'Proxima Nova', Georgia, sans-serif;
+
+.header-bar {
+    height: 74px;
+    background-color: $primary;
+    border-bottom: solid 1px #253342;
+    .cabecalho__logo {
+        color: $white;
+        font-size: em(30);
+        font-weight: bold;
+        text-transform: uppercase;
+    };
+    .cabecalho__nav-bar {
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            li {
+                @include menu-item;
+            }
+        }
+    }
+}
+
+.title {
+    @include title;
 }

@@ -1,3 +1,32 @@
-@mixin text {
-    
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+}
+
+@mixin menu-item {
+    list-style: none;
+    font-size: em(15);
+    color: #7e95ae;
+    margin-right: 40px;
+    cursor: pointer;
+    &:last-child {
+        margin-right: 0;
+    };
+    &.cabecalho__nav-bar__menu-active {
+        color: $white;
+    }
+    &:hover {
+        color: $white;
+    };
+    &:first-letter {
+        text-transform: uppercase;
+    }
+}
+
+@mixin title($color: $grey, ) {
+    color: $color;
+    font-size: em(45);
+    font-weight: lighter;
+    margin: 58px 0 35px 0;
 }
