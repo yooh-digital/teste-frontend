@@ -1,3 +1,9 @@
-(function() {
-    $('.cabecalho__nav-bar').MenuAnchor();
-}());
+// (function() {
+//     function menuMobile() {
+//         $(function(){
+//             $('#nave-bar').slicknav();
+//         });
+//     }
+
+//     menuMobile();
+// }());
