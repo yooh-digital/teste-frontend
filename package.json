@@ -18,12 +18,13 @@
   },
   "homepage": "https://github.com/LuanDc/teste-frontend#readme",
   "dependencies": {
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-sync": "^0.1.4",
-    "jquery": "^3.4.1",
-    "node-normalize-scss": "^8.0.1"
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-concat": "^2.6.1"
   },
   "devDependencies": {
+    "gulp-minify": "^3.1.0",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.12.0"
   }
