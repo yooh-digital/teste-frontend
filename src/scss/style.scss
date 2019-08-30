@@ -4,6 +4,7 @@
 @import "mixins";
 @import "skeleton";
 @import "slicknav";
+@import "origamid-menu";
 
 .header-bar {
     position: fixed;
@@ -31,6 +32,7 @@
             height: 100%;
             display: flex;
             justify-content: flex-end;
+            flex-wrap: wrap;
             margin-bottom: 0;
             align-items: center;
             li {
@@ -52,7 +54,10 @@ section {
     };
     &.our-team {
         background-color: $secondary-grey;
-    }
+    };
+    &.contact {
+        background-color: $secondary-grey;
+    };
 }
 
 .banner {
@@ -76,4 +81,75 @@ section {
     color: $grey;
     max-width: 800px;
     margin: 35px auto;
+    text-align: center;
+    &.text--grey {
+        color: #a5a5a5;
+    }
+}
+
+.team-card {
+    margin-top: 60px;
+    .team-card__title {
+        font-size: em(25);
+        color: $grey;
+        margin-bottom: 20px;
+    };
+    .team-card__text {
+        color: $grey;
+    };
+    .team-card__button {
+        margin-top: 31px;
+        @include button(icon);
+    };
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form__field {
+        width: 50%;
+        min-width: 420px;
+        display: block;
+        &.form__field--textarea {
+            height: 140px;
+        };
+        &:focus {
+            border: $primary 1px solid;
+        };
+    };
+    .form__button {
+        @include button;
+    }
+}
+
+.footer {
+    padding: 56px 0 45px 0;
+    .footer__menu {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        .footer__menu__item {
+            padding: 20px 0;
+            &::before {
+                content: ':';
+                margin: 0 22px;
+                color: $grey;
+            }
+            &:first-child::before {
+                content: '';
+            }
+            &:last-child {
+                margin-right: 40px;
+            }
+            a {
+                color: $grey;
+                cursor: pointer;
+                text-decoration: none;
+                &:hover {
+                    color: $primary
+                }
+            }
+        }
+    }
 }

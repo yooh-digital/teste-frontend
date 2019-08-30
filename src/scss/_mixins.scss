@@ -1,5 +1,3 @@
-$browser-context: 16;
-
 @function em($pixels, $context: $browser-context) {
     @return #{$pixels/$context}em;
 }
@@ -33,4 +31,18 @@ $browser-context: 16;
     font-weight: lighter;
     margin-bottom: 35px;
     text-align: center;
+}
+
+@mixin button($type: normal) {
+    background-color: $primary;
+    color: $white;
+    @if $type == icon {
+        padding: 5px 26px;
+    }
+    @if $type == normal {
+        padding: 0 50px;
+    }
+    &:hover {
+        background-color: lighten($primary, 10%);
+    }
 }
