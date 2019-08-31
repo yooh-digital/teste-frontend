@@ -17,26 +17,33 @@
     border-bottom: solid 1px #253342;
     display: flex;
     align-items: center;
-    .cabecalho__logo {
-        color: $white;
-        font-size: em(30);
-        font-weight: bold;
-        text-transform: uppercase;
-        a {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .cabecalho__logo {
             color: $white;
-            text-decoration: none;
-        }
-    };
-    .cabecalho__nav-bar {
-        ul {
-            height: 100%;
-            display: flex;
-            justify-content: flex-end;
-            flex-wrap: wrap;
-            margin-bottom: 0;
-            align-items: center;
-            li {
-                @include menu-item;
+            font-size: em(30);
+            font-weight: bold;
+            text-transform: uppercase;
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        };
+        .cabecalho__nav-bar {
+            width: 100%;
+            ul {
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                margin-bottom: 0;
+                margin-top: 10px;
+                align-items: center;
+                li {
+                    @include menu-item;
+                }
             }
         }
     }
@@ -44,6 +51,24 @@
 
 main {
     margin-top: 74px;
+}
+
+.banner {
+    background-color: $primary;
+    .title {
+        @include title($white);
+    };
+    .sub-title {
+        @include title($white, 25);
+    }
+    .banner__image {
+        @include device(medium) {
+            @include image-size(650px, 350px);
+        }
+        @include device(small) {
+            @include image-size(350px, 200px);
+        } 
+    }
 }
 
 section {
@@ -55,19 +80,19 @@ section {
     &.our-team {
         background-color: $secondary-grey;
     };
+    &.about-us {
+        .about-us__image {
+            @include device(medium) {
+                @include image-size(350px, 250px);
+            }
+            @include device(small) {
+                @include image-size(320px, 220px);
+            } 
+        }
+    }
     &.contact {
         background-color: $secondary-grey;
     };
-}
-
-.banner {
-    background-color: $primary;
-    .title {
-        @include title($white);
-    };
-    .sub-title {
-        @include title($white, 25);
-    }
 }
 
 .title {
@@ -89,6 +114,16 @@ section {
 
 .team-card {
     margin-top: 60px;
+    .team-card__image {
+        img {
+            @include device(medium) {
+                @include image-size(140px, 140px);
+            }
+            @include device(small) {
+                @include image-size(140px, 140px); 
+            }
+        }
+    }
     .team-card__title {
         font-size: em(25);
         color: $grey;
@@ -114,10 +149,42 @@ section {
         padding: 13px 25px;
         margin-right: 11px;
         cursor: pointer;
+        @include device(small) {
+            padding: 10px 20px;
+            font-size: em(10);
+        }
+        &:hover {
+            color: $primary;
+            border-color: $primary;
+        }
     }
     .button-list__button--active {
         border: 1px solid $primary;
         color: $primary;
+    }
+}
+
+.portfolio {
+    height: 345px;
+    margin: 28px 22px;
+    .portfolio__image {
+        height: 237px;
+        width: 100%;
+        background-color: $secondary-grey;
+    }
+    .portfolio__info {
+        background-color: #9a9a9a;
+        padding: 10px;
+        .portfolio__info__title {
+            @include title($white, 25, 17px);
+            text-align: left;
+            letter-spacing: 2px;
+        }
+    }
+    .portfolio__info__text {
+        text-align: left;
+        color: $white;
+        font-size: em(15);
     }
 }
 
@@ -169,5 +236,11 @@ section {
                 }
             }
         }
+    }
+}
+
+.header-bar { 
+    .cabecalho__nav-bar ul {
+        height: 230px !important;
     }
 }

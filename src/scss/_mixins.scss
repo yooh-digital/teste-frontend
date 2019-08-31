@@ -1,3 +1,7 @@
+$small-device: 480px;
+$medium-device: 760px;
+$large-device: 1200px;
+
 @function em($pixels, $context: $browser-context) {
     @return #{$pixels/$context}em;
 }
@@ -25,11 +29,11 @@
     }
 }
 
-@mixin title($color: $grey, $size: 45) {
+@mixin title($color: $grey, $size: 45, $margin-bottom: 35px) {
     color: $color;
     font-size: em($size);
     font-weight: lighter;
-    margin-bottom: 35px;
+    margin-bottom: $margin-bottom;
     text-align: center;
 }
 
@@ -45,4 +49,27 @@
     &:hover {
         background-color: lighten($primary, 10%);
     }
+}
+
+@mixin device($device) {
+    @if $device == large {
+        @media screen and (min-width: $large-device) {
+            @content;
+        }
+    }
+    @if $device == medium {
+        @media screen and (min-width: $medium-device) and (max-width: $large-device - 1) {
+            @content;
+        }
+    }
+    @if $device == small {
+        @media screen and (max-width: $medium-device - 1) {
+            @content;
+        }
+    }
+}
+
+@mixin image-size($width, $height) {
+    width: $width;
+    height: $height;
 }
